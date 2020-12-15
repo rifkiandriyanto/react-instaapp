@@ -12,16 +12,16 @@ export default function Login() {
     document.title = `Login | instaapp`;
   }, []);
 
-  // const signIn = () => {
-  //   auth
-  //     .signInWithPopup(provider)
-  //     .then((result) => {
-  //       history.push('/');
-  //     })
-  //     .catch((error) => {
-  //       // alert(error.message);
-  //     });
-  // };
+  const signIn = () => {
+    auth
+      .signInWithPopup(provider)
+      .then((result) => {
+        history.push('/');
+      })
+      .catch((error) => {
+        // alert(error.message);
+      });
+  };
 
   const signInEmail = (e) => {
     e.preventDefault();
@@ -34,18 +34,18 @@ export default function Login() {
       .catch((error) => alert(error.message));
   };
 
-  // const register = (e) => {
-  //   e.preventDefault();
+  const register = (e) => {
+    e.preventDefault();
 
-  //   auth
-  //     .createUserWithEmailAndPassword(email, password)
-  //     .then((auth) => {
-  //       if (auth) {
-  //         history.push('/');
-  //       }
-  //     })
-  //     .catch((error) => alert(error.message));
-  // };
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push('/');
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
 
   return (
     <div className='login'>
@@ -79,15 +79,15 @@ export default function Login() {
           </button>
         </form>
 
-        {/* <button className='loginRegisterButton' onClick={register}>
+        <button className='loginRegisterButton' onClick={register}>
           Create your instaapp Account
-        </button> */}
+        </button>
 
         <br />
-        {/* <h5>OR</h5>
+        <h5>OR</h5>
         <button onClick={signIn} className='loginSignInButtonGoogle'>
           <i className='fab fa-google'></i> Sign In with Google
-        </button> */}
+        </button>
 
         <p>
           Disclaimer: This is a fake social media platform called instaapp. If
