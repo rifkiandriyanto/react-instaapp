@@ -1,0 +1,98 @@
+.post {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--grey);
+    border-radius: 5px;
+    border: 1px solid var(--icon-bg) ;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.post a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    margin: 5px 10px 5px 5px
+}
+
+.postImage {
+    width: 100%;
+    max-width: 480px;
+    max-height: 700px;
+    object-fit: cover;
+    border-top: 1px solid var(--icon-bg) ;
+    border-bottom: 1px solid var(--icon-bg) ;
+}
+
+.postInteractionBar{
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--icon-bg) ;
+}
+
+.postInteractionItem{
+    padding: 0px 20px 0 0;
+    font-size: 24px;
+}
+
+.postHeart{
+    color: var(--purple);
+}
+
+.postComments {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.postCaption {
+    text-align: left;
+    padding: 0px;
+}
+
+.postMoreComments {
+    padding-top: 10px;
+}
+
+.postMoreComments:hover {
+    text-decoration: underline;
+}
+
+.postCommentsInput {
+    display: flex;
+    border-top: 1px solid var(--icon-bg) ;
+}
+
+.message {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.postComment {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: var(--grey);
+}
+
+.postCommentButton {
+    flex: 0;
+    cursor: pointer;
+    background-color: var(--grey);
+    border: none;
+    color: var(--purple);
+    padding: 10px;
+}

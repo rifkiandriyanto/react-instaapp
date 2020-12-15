@@ -1,0 +1,22 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.image{
+  margin: 10px;
+}
+
+.filter {
+  background-color: black;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  filter: alpha(opacity=50);
+	opacity: 0.6;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

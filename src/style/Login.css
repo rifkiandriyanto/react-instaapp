@@ -1,0 +1,53 @@
+.login {
+	min-height: calc(100vh - 113px);
+	background-color: var(--dark);
+	margin: 20px 0;
+	display: grid;
+	place-items: center;
+}
+
+.loginContainer {
+    max-width: 400px;
+	padding: 20px;
+	text-align: center;
+	background-color: var(--grey);
+	border-radius: 15px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loginContainer button {
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+	border-radius: 40px;
+	background-color: var(--purple);
+	padding: 10px;
+	font-size: 18px;
+	color: var(--white);
+	cursor: pointer;
+}
+
+.loginContainer .loginRegisterButton {
+    background-color: var(--input);
+    color: var(--theme);
+}
+
+.loginContainer > form > h5 {
+    margin: 5px;
+    text-align: left;
+}
+
+.loginContainer > form > input {
+	height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+	border: 0px;
+	color: var(--light);
+	background-color: var(--dark);
+	width: calc(100% - 10px);
+}
+
+.loginContainer > p {
+	margin-top: 15px;
+	font-size: 12px;
+}
