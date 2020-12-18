@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer id='footer' className='footer'>
       <p>
-        Made with ❤ by
+       Built with React with 💚 by
         <a
           href='https://github.com/rifkiandriyanto'
           target='_blank'

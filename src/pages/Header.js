@@ -13,29 +13,29 @@ export default function Header() {
 		}
 	};
 
-	// useEffect(() => {
-	// 	const btnToggle = document.querySelector("#themeToggle i");
-	// 	const theme = localStorage.getItem("theme");
+	useEffect(() => {
+		const btnToggle = document.querySelector("#themeToggle i");
+		const theme = localStorage.getItem("theme");
 
-	// 	if (theme === "light") {
-	// 		btnToggle.classList.add("fa-sun");
-	// 		btnToggle.classList.remove("fa-moon");
-	// 		document.querySelector("body").classList.add(theme);
-	// 	}
+		if (theme === "light") {
+			btnToggle.classList.add("fa-sun");
+			btnToggle.classList.remove("fa-moon");
+			document.querySelector("body").classList.add(theme);
+		}
 
-	// 	btnToggle.addEventListener("click", () => {
-	// 		if (btnToggle.classList.contains("fa-moon")) {
-	// 			btnToggle.classList.add("fa-sun");
-	// 			btnToggle.classList.remove("fa-moon");
-	// 			localStorage.setItem("theme", "light");
-	// 		} else {
-	// 			btnToggle.classList.add("fa-moon");
-	// 			btnToggle.classList.remove("fa-sun");
-	// 			localStorage.clear();
-	// 		}
-	// 		document.querySelector("body").classList.toggle("light");
-	// 	});
-	// }, []);
+		btnToggle.addEventListener("click", () => {
+			if (btnToggle.classList.contains("fa-moon")) {
+				btnToggle.classList.add("fa-sun");
+				btnToggle.classList.remove("fa-moon");
+				localStorage.setItem("theme", "light");
+			} else {
+				btnToggle.classList.add("fa-moon");
+				btnToggle.classList.remove("fa-sun");
+				localStorage.clear();
+			}
+			document.querySelector("body").classList.toggle("light");
+		});
+	}, []);
 
 	return (
 		<div className="header">
@@ -84,9 +84,9 @@ export default function Header() {
 
 			</div>
 
-			{/* <div id="themeToggle" className="headerTheme">
+			<div id="themeToggle" className="headerTheme">
 				<i className="far fa-moon"></i>
-			</div> */}
+			</div>
 		</div>
 	);
 }
