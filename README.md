@@ -6,8 +6,8 @@
 
 ## App Demo
 
-![](shot/shot1.png)
-![](shot/shot2.png)
+![](shot/Shot1.png)
+![](shot/Shot2.png)
 
 
 ## Installation :wrench:
