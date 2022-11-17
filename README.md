@@ -6,21 +6,23 @@
 
 ## App Demo
 
+![](shot/instaapp.png)
+<br />
+<br />
+
 ![](shot/Shot1.png)
 ![](shot/Shot2.png)
 
-
 ## Installation :wrench:
 
--   Clone backend repo by running `git clone git@github.com:rifkiandriyanto/react-instaapp
+- Clone backend repo by running `git clone git@github.com:rifkiandriyanto/react-instaapp
 
-###  Setup
+### Setup
 
--   `cd Instaap`
--   `yarn`
--   `yarn start`
--   It will be available at `localhost:3000`
-
+- `cd Instaap`
+- `yarn`
+- `yarn start`
+- It will be available at `localhost:3000`
 
 ## Built With :zap:
 
@@ -33,4 +35,4 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
--   **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
